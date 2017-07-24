@@ -2,7 +2,7 @@ package fundamentals;
 
 import util.PrintUtil;
 
-public class QuickUnionWeightedUFwithPF {
+public class QuickUnionWeightedUFwithPC {
 
 	static class QuickUnionWithPathCompression {
 		private int[] parent;
