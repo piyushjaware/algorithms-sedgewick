@@ -1,6 +1,6 @@
 package sort.elementary;
 
-public class Selection implements Sort {
+public class Selection implements Sortable {
 
 	int compares = 0;
 	int exchanges = 0;

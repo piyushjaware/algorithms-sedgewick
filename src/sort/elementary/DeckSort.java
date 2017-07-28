@@ -40,7 +40,7 @@ public class DeckSort {
 		Card[] cards = new Card[52];
 		init(suits, cards);
 
-		Sort sorter = new Shell();
+		Sortable sorter = new Shell();
 		System.out.print("Input Deck : ");
 		sorter.show(cards);
 

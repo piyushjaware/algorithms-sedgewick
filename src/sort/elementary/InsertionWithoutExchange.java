@@ -1,6 +1,6 @@
 package sort.elementary;
 
-public class InsertionWithoutExchange implements Sort {
+public class InsertionWithoutExchange implements Sortable {
 
 	int compares = 0;
 	int exchanges = 0;

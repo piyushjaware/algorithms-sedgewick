@@ -1,6 +1,6 @@
 package sort.elementary;
 
-public interface Sort {
+public interface Sortable {
 
 	void sort(Comparable[] a);
 

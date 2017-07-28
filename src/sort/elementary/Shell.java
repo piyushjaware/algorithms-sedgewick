@@ -1,6 +1,6 @@
 package sort.elementary;
 
-public class Shell implements Sort {
+public class Shell implements Sortable {
 
 	int compares = 0;
 	int exchanges = 0;

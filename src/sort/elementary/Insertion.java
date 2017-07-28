@@ -1,9 +1,17 @@
 package sort.elementary;
 
-public class Insertion implements Sort {
+public class Insertion implements Sortable {
 
-	int compares = 0;
-	int exchanges = 0;
+	int compares;
+	int exchanges;
+	boolean trace;
+
+	public Insertion(boolean trace) {
+		this.trace = trace;
+	}
+
+	public Insertion() {
+	}
 
 	@Override
 	public void sort(Comparable[] a) {
@@ -16,10 +24,14 @@ public class Insertion implements Sort {
 
 	@Override
 	public void exchange(Comparable[] a, int i, int j) {
+
 		Comparable temp = a[i];
 		a[i] = a[j];
 		a[j] = temp;
 		exchanges++;
+
+		if (trace)
+			show(a);
 	}
 
 	@Override
